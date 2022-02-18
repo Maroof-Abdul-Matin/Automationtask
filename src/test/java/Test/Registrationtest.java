@@ -26,8 +26,8 @@ public class Registrationtest {
 	Tshirt tshirt = new Tshirt(driver);
 	Payment payment = new Payment(driver);
 
-	String email1 = "abc12300a@xyz.com";
-	String email2 = "xyz12300a@xyz.com";
+	String email1 = "ede@pqrs.org";
+	String email2 = "xyz12300000a@xyz.com";
 
 	@Test(priority = 0)
 	public void registrationcomplete() {
@@ -51,6 +51,7 @@ public class Registrationtest {
 	public void login() {
 		homepage.signinclick();
 		loginRegistration.signin(email1);
+		
 		myaccount.dresstype_casualdress();
 		casualdressselection.dressaddtocart();
 		myaccount.tshirt();

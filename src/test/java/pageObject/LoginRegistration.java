@@ -20,7 +20,7 @@ public class LoginRegistration {
 	public void signin(String email) {
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys(email);
 
-		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("123456abc");
+		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("123123");
 
 		driver.findElement(By.xpath("//button[@id='SubmitLogin']")).click();
 	}
